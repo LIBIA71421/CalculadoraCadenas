@@ -25,3 +25,8 @@ describe("Sumar", () => {
     expect(Calcu("2,5-8")).toEqual(15);
   });
 });
+describe("Sumar", () => {
+  it("deberia devolver suma separada por distintos separadores", () => {
+    expect(calculadora("//[;] 6,3-2;1")).toEqual(12);
+  });
+});
