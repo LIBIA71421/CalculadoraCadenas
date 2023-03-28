@@ -1,15 +1,31 @@
-function Calcu  (cadena){
+function aCadena(cadena){
+    let newCadena = [];
+    for (let i = 0 ; i < cadena.length; i++){
+      newCadena[i] = parseInt(cadena[i]);
+    } 
+    return newCadena;
+  }
+
+function sumar(num){
+    let suma = 0;
+    for (let i = 0 ; i < num.length; i++){
+      suma = suma + num[i];
+    } 
+    return suma;
+  }
+  function Calcu  (cadena){
     if(cadena == ""){
         return 0;
     }
     else{
         if(cadena.lengt > 1){
-            let cadenaInt = cadena.split(",");
-            return parseInt(cadenaInt[0])+parseInt(cadenaInt[1]);
-        }else{
-            return parseInt(cadena)
+            let cadenaNumeros = conversion(cadena.split(","));
+            return sumar(cadenaNumeros);
+            }
+        else
+        {
+            return parseInt(cadena);
         }
     }
 }
-
 export default Calcu;
