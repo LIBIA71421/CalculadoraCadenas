@@ -18,9 +18,9 @@ function sumar(num){
         return 0;
     }
     else{
-        if(cadena.lengt > 1){
-            let cadenaNumeros = conversion(cadena.split(","));
-            return sumar(cadenaNumeros);
+        if(cadena.length > 1){
+            let cadenaN = aCadena(cadena.split("/[,-]+/"));
+            return sumar(cadenaN);
             }
         else
         {

@@ -17,6 +17,11 @@ describe("Sumar", () => {
 });
 describe("Sumar", () => {
   it("deberia devolver suma separada por , de tres digitos", () => {
-    expect(Calcu("2,5,8")).toEqual(8);
+    expect(Calcu("2,5,8")).toEqual(15);
+  });
+});
+describe("Sumar", () => {
+  it("deberia devolver suma separada por , o -", () => {
+    expect(Calcu("2,5-8")).toEqual(15);
   });
 });
